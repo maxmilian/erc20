@@ -13,7 +13,7 @@ async function main() {
   const mhTokenDeploy = await mhTokenContract.deploy();
   await mhTokenDeploy.deployed();
 
-  console.log(("MH coin deployed to:"), mhTokenDeploy.address);
+  console.log("MH coin deployed to:", mhTokenDeploy.address);
   console.log("Deployer account balance:", (await deployer.getBalance()).toString());
 }
 
